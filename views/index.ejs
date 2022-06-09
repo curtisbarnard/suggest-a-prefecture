@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggest a Prefecture</title>
+  </head>
+  <body>
+    <h1>Learn about the cool prefectures of Japan</h1>
+    <section>
+      <h2>Prefectures</h2>
+      <p>
+        Check out all the prefectures below. If you have a suggestion on where
+        to go or what to see, please add a comment.
+      </p>
+      <% for (let i = 0; i < prefs.length; i++) {%>
+      <div class="card">
+        <h3><%= prefs[i].engName %> (<%= prefs[i].jName %>)</h3>
+        <img src="#" alt="" />
+        <span>Population: <%= prefs[i].population.pop2020 %></span>
+        <span>Island: <%= prefs[i].island %></span>
+        <span>Largest City: <%= prefs[i].largeCity %></span>
+        <span>Suggestions</span>
+        <div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+            optio aliquid omnis ad ex?
+          </p>
+          <span>Some person</span>
+          <span>06/09/2022</span>
+        </div>
+        <form action="">
+          <input type="text" name="" id="" />
+          <button type="submit">Add Comment</button>
+        </form>
+      </div>
+      <% } %>
+    </section>
+  </body>
+</html>

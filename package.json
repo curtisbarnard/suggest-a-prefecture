@@ -1,0 +1,30 @@
+{
+  "name": "suggest-a-prefecture",
+  "version": "1.0.0",
+  "description": "Learn about the prefectures of Japan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curtisbarnard/suggest-a-prefecture.git"
+  },
+  "author": "Curtis Barnard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curtisbarnard/suggest-a-prefecture/issues"
+  },
+  "homepage": "https://github.com/curtisbarnard/suggest-a-prefecture#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
